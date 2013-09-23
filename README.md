@@ -1,4 +1,5 @@
 getting-started-with-node.js
 ============================
 
-Getting started with node.js
+node.js by examples
+
