@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<script src = "http://localhost:3001/socket.io/socket.io.js"></script>
+		<script type="text/javascript" charset="UTF-8">
+			var socket = io.connect('http://localhost:3001');
+			
+			socket.on('entrance',function(data){
+				document.write('<p>' + data.message + '</p>');
+			});
+			
+			socket.on('exit',function(data){
+				document.write('<p>' + data.message + '</p>');
+			});
+		</script>
+	</head>
+</html>
